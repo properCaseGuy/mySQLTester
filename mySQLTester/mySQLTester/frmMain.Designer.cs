@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.btnConnect = new System.Windows.Forms.Button();
+            this.btnReadTest = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnConnect
@@ -41,11 +42,21 @@
             this.btnConnect.UseVisualStyleBackColor = true;
             this.btnConnect.Click += new System.EventHandler(this.button1_Click);
             // 
+            // btnReadTest
+            // 
+            this.btnReadTest.Location = new System.Drawing.Point(21, 72);
+            this.btnReadTest.Name = "btnReadTest";
+            this.btnReadTest.Size = new System.Drawing.Size(111, 36);
+            this.btnReadTest.TabIndex = 1;
+            this.btnReadTest.Text = "Read Test";
+            this.btnReadTest.UseVisualStyleBackColor = true;
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(552, 362);
+            this.Controls.Add(this.btnReadTest);
             this.Controls.Add(this.btnConnect);
             this.Name = "frmMain";
             this.Text = "My SQL Tester";
@@ -56,6 +67,7 @@
         #endregion
 
         private System.Windows.Forms.Button btnConnect;
+        private System.Windows.Forms.Button btnReadTest;
     }
 }
 
